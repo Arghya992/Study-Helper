@@ -1,0 +1,23 @@
+
+# Create main folder
+mkdir study-helper
+cd study-helper
+
+# Create frontend
+npm create vite@latest client -- --template react
+cd client
+npm install
+
+# Install frontend dependencies
+npm install axios react-router-dom react-quill lucide-react recharts date-fns
+
+cd ..
+
+# Create backend
+mkdir server
+cd server
+npm init -y
+
+# Install backend dependencies
+npm install express mongoose dotenv bcryptjs jsonwebtoken cors express-validator
+npm install nodemon --save-dev
